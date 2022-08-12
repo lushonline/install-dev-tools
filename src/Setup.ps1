@@ -29,6 +29,7 @@ Register-ScriptInstallDevTools-As-RunOnce;
 # Run scripts
 Invoke-Expression (Join-Path -Path $ScriptWorkFolder -ChildPath "Chocolatey" | Join-Path -ChildPath "Chocolatey.ps1");
 Invoke-Expression (Join-Path -Path $ScriptWorkFolder -ChildPath "Fonts" | Join-Path -ChildPath "Fonts.ps1");
+Invoke-Expression (Join-Path -Path $ScriptWorkFolder -ChildPath "NodeLTS" | Join-Path -ChildPath "NodeLTS.ps1");
 Invoke-Expression (Join-Path -Path $ScriptWorkFolder -ChildPath "Git" | Join-Path -ChildPath "Git.ps1");
 Invoke-Expression (Join-Path -Path $ScriptWorkFolder -ChildPath "GitCredentialManager" | Join-Path -ChildPath "GitCredentialManager.ps1");
 Invoke-Expression (Join-Path -Path $ScriptWorkFolder -ChildPath "GitHubDesktop" | Join-Path -ChildPath "GitHubDesktop.ps1");
