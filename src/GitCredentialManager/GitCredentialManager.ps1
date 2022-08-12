@@ -1,0 +1,1 @@
+choco install -y "git-credential-manager-for-windows";
