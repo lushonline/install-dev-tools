@@ -1,2 +1,2 @@
-choco install -y "nodejs.install" --version=16.16.0
+choco install -y "nodejs-lts"
 refreshenv;
