@@ -1,6 +1,6 @@
 # install-dev-tools
 
-Repeatable, reboot resilient Dotfiles script to setup a development environment in Microsoft Windows 10+ using Chocolatey and PowerShell.
+Repeatable, reboot resilient script to setup a development environment in Microsoft Windows 10+ using Chocolatey and PowerShell.
 
 ## Usage
 
