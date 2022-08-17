@@ -21,12 +21,11 @@ This script does:
 - Install Google Fonts
   - Montserrat
   - Spectral
-- Configure Chocolatey to remember installation arguments for future updates.
-- Install Git.
-- Install GitCredentialManager.
-- Install GitHub Desktop.
+- NodeLTS
 - Install Windows Terminal.
 - Install Visual Studio Code.
+- Install Git.
+- Install GitHub Desktop.
 - Install Notepad++.
 - Enable Windows Subsystem for Linux.
 - Install Debian in WSL.
