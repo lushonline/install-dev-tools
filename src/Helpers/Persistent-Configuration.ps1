@@ -3,7 +3,7 @@ function Set-Configuration-File {
   param (
     [Parameter( Position = 0, Mandatory = $TRUE)]
     [String]
-    $DotfilesConfigFile,
+    $ScriptConfigFile,
 
     [Parameter( Position = 1, Mandatory = $TRUE)]
     [String]
@@ -18,7 +18,7 @@ function Set-Configuration-File {
     $WorkspaceDisk
   )
 
-  if (-not (Test-Path -Path $DotfilesConfigFile)) {
+  if (-not (Test-Path -Path $ScriptConfigFile)) {
     Write-Host "Creating config.json file:" -ForegroundColor "Green";
     $ConfigJsonBody = [PSCustomObject]@{
       GitUserName   = $GitUserName
@@ -26,7 +26,7 @@ function Set-Configuration-File {
       WorkspaceDisk = $WorkspaceDisk
     };
 
-    Set-Content -Path $DotfilesConfigFile -Value ($ConfigJsonBody | ConvertTo-Json);
+    Set-Content -Path $ScriptConfigFile -Value ($ConfigJsonBody | ConvertTo-Json);
 
     Write-Host "config.json file successfully created." -ForegroundColor "Green";
   }
@@ -37,11 +37,11 @@ function Get-Configuration-File {
   param (
     [Parameter( Position = 0, Mandatory = $TRUE)]
     [String]
-    $DotfilesConfigFile
+    $ScriptConfigFile
   )
 
   $Config = @{};
-  $ConfigContent = Get-Content $DotfilesConfigFile | ConvertFrom-Json;
+  $ConfigContent = Get-Content $ScriptConfigFile | ConvertFrom-Json;
 
   Write-Host "Reading config.json file:" -ForegroundColor "Green";
 

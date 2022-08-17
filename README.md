@@ -15,7 +15,7 @@ Invoke-Expression (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/${G
 
 ## What does?
 
-This dotfiles script does:
+This script does:
 
 - Install Chocolatey.
 - Install Google Fonts
