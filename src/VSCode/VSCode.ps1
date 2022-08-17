@@ -13,5 +13,4 @@ function Set-VSCode-Configuration {
 
 choco install -y "vscode";
 refreshenv;
-code --install-extension "Shan.code-settings-sync";
 Set-VSCode-Configuration;
